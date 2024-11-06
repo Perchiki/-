@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section1">Раздел 1</a></li>
+                <li><a href="#section2">Раздел 2</a></li>
+                <li><a href="page2.html">На страницу 2</a></li>
+                <li><a href="https://www.example.com" target="_blank">Внешний сайт</a></li>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Это демонстрация различных элементов HTML.</p>
+
+        <section id="section1">
+            <h2>Раздел 1</h2>
+            <ul>
+                <li>Первый элемент</li>
+                <li>Второй элемент</li>
+                <li>Третий элемент</li>
+            </ul>
+        </section>
+
+        <section id="section2">
+            <h2>Раздел 2</h2>
+            <ol>
+                <li>Первый пункт</li>
+                <li>Второй пункт</li>
+                <li>Третий пункт</li>
+            </ol>
+
+            <h3>Вложенный список</h3>
+            <ul>
+                <li>Первый элемент
+                    <ul>
+                        <li>Вложенный элемент 1</li>
+                        <li>Вложенный элемент 2</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <figure>
+            <img src="thumbnail.jpg" alt="Пример изображения" width="100" onclick="window.open('large-image.jpg', '_blank');">
+            <figcaption>Кликабельное изображение для просмотра в большом размере.</figcaption>
+        </figure>
+
+        <table style="background-image: url('table-bg.jpg');">
+            <tr>
+                <td><img src="cell-image.jpg" alt="Изображение в ячейке"></td>
+                <td><a href="https://www.example.com">Гиперссылка</a></td>
+            </tr>
+        </table>
+
+        <form action="submit_contact.php" method="post">
+            <h3>Контактная форма</h3>
+            <input type="text" name="surname" placeholder="Фамилия" required>
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="number" name="phone" placeholder="Мобильный телефон" required>
+            <input type="email" name="email" placeholder="Электронная почта" required>
+            <input type="date" name="date" required>
+            <input type="submit" value="Отправить">
+        </form>
+
+        <form action="submit_data.php" method="post">
+            <h3>Форма заказа</h3>
+            <input type="text" name="order" placeholder="Название заказа" required>
+            <input type="number" name="quantity" placeholder="Количество" required>
+            <input type="radio" name="delivery" value="курьер" required> Курьер
+            <input type="radio" name="delivery" value="почта"> Почта
+            <input type="checkbox" name="terms" required> Я согласен с условиями
+            <input type="hidden" name="default_value" value="задано по умолчанию">
+            <input type="password" name="password" placeholder="Пароль" required>
+            <input type="submit" value="Отправить">
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Мой Сайт</p>
+    </footer>
+</body>
+</html>
+
+
+----------------
+
+
+4. large-image.jpg, thumbnail.jpg, table-bg.jpg, cell-image.jpg
+
+Эти изображения нужно будет создать или скачать и сохранить в той же папке, что и HTML и CSS файлы.
+5. submit_contact.php и submit_data.php
+
+Эти файлы предназначены для обработки данных формы. Вам нужно настроить сервер для обработки форм, например, на PHP.
+
+Эта структура представляет собой базовый сайт с необходимыми элементами. Вы можете добавлять и изменять контент, стили и логику по своему усмотрению!
